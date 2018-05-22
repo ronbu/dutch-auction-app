@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell Height="500"
+          xmlns="http://xamarin.com/schemas/2014/forms" 
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          x:Class="DutchAuctionApp.AuctionDetail">
+    <FlexLayout Wrap="Wrap" 
+                Direction="Row"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Center"
+                AlignContent="Center">
+           <Label x:Name="Title" Text="{Binding Title}"></Label>
+           <Label Text="{Binding Creator}" ></Label>
+           <Label Text="{Binding CurrentPrice}" ></Label>
+            <Label Text="{Binding HighestBid}" ></Label> 
+           <Label Text="{Binding HighestBidder}" ></Label>
+           <Label Text="{Binding Creator}" ></Label>
+           <Label Text="{Binding State}"></Label>
+           <Entry x:Name="Price" Placeholder="price..."></Entry>
+           <Button Text="Bid" Clicked="BidClicked"/>
+    </FlexLayout>
+</ViewCell>

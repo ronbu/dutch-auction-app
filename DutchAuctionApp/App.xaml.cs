@@ -1,6 +1,5 @@
 ﻿using System;
 using Xamarin.Forms;
-using DutchAuctionApp.Views;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -8,13 +7,15 @@ namespace DutchAuctionApp
 {
     public partial class App : Application
     {
+        
 
         public App()
         {
             InitializeComponent();
 
+            MainPage = new AuctionsPage();
 
-            MainPage = new MainPage();
+
         }
 
         protected override void OnStart()
